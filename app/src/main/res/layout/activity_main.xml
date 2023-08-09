@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:translationY="-40dp"
+        app:srcCompat="@drawable/loga_1" />
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:translationX="-30dp"
+        app:srcCompat="@drawable/logo_3" />
+
+    <ImageView
+        android:id="@+id/logo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:translationX="30dp"
+        android:translationY="10dp"
+        app:srcCompat="@drawable/logo_2" />
+
+    <ImageView
+        android:id="@+id/hoja2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:translationX="10dp"
+        android:translationY="-75dp"
+        app:srcCompat="@drawable/hoja1" />
+
+    <ImageView
+        android:id="@+id/hoja1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:translationX="-20dp"
+        android:translationY="-80dp"
+        app:srcCompat="@drawable/hoja2" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/formabtn_splash"
+        android:text="Fruit Hub"
+        android:textSize="25sp"
+        android:translationY="95dp" />
+</FrameLayout>
