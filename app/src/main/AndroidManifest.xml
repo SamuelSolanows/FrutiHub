@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FrutiHub"
         tools:targetApi="31">
         <activity
+            android:name=".Completeorder"
+            android:exported="false" />
+        <activity
             android:name=".Home_screen_one"
             android:exported="false" />
         <activity

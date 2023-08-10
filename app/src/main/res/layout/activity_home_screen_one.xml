@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="#F3F0F0"
     android:orientation="vertical"
     tools:context=".Home_screen_one">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="69dp"
-        android:orientation="horizontal">
+        android:layout_height="69dp">
 
         <ImageView
             android:id="@+id/menu"
@@ -22,6 +21,7 @@
             android:src="@drawable/menu" />
 
         <ImageView
+            android:id="@+id/canasta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
@@ -40,20 +40,25 @@
 
 
     <TextView
+        android:id="@+id/texto"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
-        android:textStyle="bold"
         android:text="Hello Tony, What fruit salad combo do you want today?"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationY="90dp" />
 
     <LinearLayout
+
+        android:id="@+id/buscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:translationY="150dp">
 
         <EditText
             android:layout_width="match_parent"
@@ -78,20 +83,26 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/recomendadotxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="25dp"
         android:text="Recommended Combo"
         android:textSize="19dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:translationY="210dp" />
 
     <LinearLayout
+
+        android:id="@+id/recomendado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:layout_marginTop="30dp">
+        android:translationY="-40dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -216,12 +227,14 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/barra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:translationY="130dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -254,25 +267,29 @@
 
     </LinearLayout>
 
+
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_marginTop="40dp"/>
+        android:orientation="horizontal" />
 
     <HorizontalScrollView
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:scrollbars="none">
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:scrollbars="none"
+        android:translationY="-40dp">
 
         <LinearLayout
+            android:id="@+id/barra_menu"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_gravity="bottom">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <FrameLayout
+                android:id="@+id/quinoa"
                 android:layout_width="140dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="20dp"
@@ -333,6 +350,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/tropical"
                 android:layout_width="140dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="20dp"
@@ -454,4 +472,4 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-</LinearLayout>
+</FrameLayout>

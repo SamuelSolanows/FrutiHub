@@ -199,7 +199,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun CambiarActivity() {
-        Handler(Looper.myLooper()!!).postDelayed(4000) {
+        Handler(Looper.myLooper()!!).postDelayed(2000) {
             startActivity(Intent(this@MainActivity, Welcome::class.java))
             finish()
         }
