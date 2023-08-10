@@ -3,27 +3,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="#F3F0F0"
     android:orientation="vertical"
     tools:context=".Home_screen_one">
 
-    <ImageView
-        android:id="@+id/menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="35dp"
-        android:src="@drawable/menu" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/menu" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/canasta"
+            android:translationX="-20dp"
+            android:translationY="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:text="My basket"
+            android:textSize="10sp"
+            android:translationX="-10dp" />
+    </FrameLayout>
+
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
+        android:textStyle="bold"
         android:text="Hello Tony, What fruit salad combo do you want today?"
-        android:textSize="19sp" />
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,7 +63,8 @@
             android:background="@drawable/txt_formas"
             android:drawableStart="@drawable/baseline_search_24"
             android:drawablePadding="10dp"
-            android:hint="Search for fruit salad combos" />
+            android:hint="Search for fruit salad combos"
+            android:textSize="14sp" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -65,7 +90,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -194,6 +220,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
         android:orientation="horizontal">
 
         <TextView
@@ -201,7 +228,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Hosttest"
-            android:textSize="20sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
@@ -209,24 +236,21 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Popular"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="New combo"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Top"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -234,47 +258,59 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"/>
 
-        <HorizontalScrollView
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom">
 
-            <LinearLayout
-                android:layout_width="165dp"
-                android:layout_height="wrap_content"
-                android:background="#FFFCFC"
+            <FrameLayout
+                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:background="#FEF9EA"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    app:srcCompat="@drawable/like2" />
+                    android:src="@drawable/like2"
+                    android:translationX="-15dp"
+                    android:translationY="10dp" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/desayuno5" />
+                    android:src="@drawable/desayuno3"
+                    android:translationY="-23dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="5dp"
-                    android:text="Honey lime combo"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
+                    android:layout_gravity="center"
+                    android:text="Quinoa fruit salad"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:translationY="23dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
                     android:layout_marginStart="20dp"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:translationY="-10dp">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -285,19 +321,137 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
-                        android:text="2,000"
+                        android:text="10,000"
                         android:textColor="#F39F57" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="20dp"
                         android:src="@drawable/mas" />
                 </LinearLayout>
+            </FrameLayout>
 
-            </LinearLayout>
-        </HorizontalScrollView>
+            <FrameLayout
+                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:background="#FDEFEF"
+                android:orientation="vertical">
 
-    </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:src="@drawable/like2"
+                    android:translationX="-15dp"
+                    android:translationY="10dp" />
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/desayuno2"
+                    android:translationY="-23dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Tropical fruit salad"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:translationY="23dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:translationY="-10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/precio" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="10,000"
+                        android:textColor="#F39F57" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/mas" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:background="#F0EEF5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:src="@drawable/like2"
+                    android:translationX="-15dp"
+                    android:translationY="10dp" />
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/desayuno1"
+                    android:translationY="-23dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="melon fruit salad"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:translationY="23dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:translationY="-10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/precio" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="10,000"
+                        android:textColor="#F39F57" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/mas" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
 
 </LinearLayout>
