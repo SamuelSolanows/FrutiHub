@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.WindowInsetsController
+import android.view.animation.DecelerateInterpolator
 import android.view.animation.LinearInterpolator
 import androidx.core.os.postDelayed
 import androidx.core.view.WindowInsetsCompat
@@ -177,7 +178,7 @@ class MainActivity : AppCompatActivity() {
             btn.y = fin5
             var traslacionbtn = ValueAnimator.ofFloat(fin5, inicio5)
             traslacionbtn.duration = 1000
-            traslacionbtn.interpolator = LinearInterpolator()
+            traslacionbtn.interpolator = DecelerateInterpolator()
             traslacionbtn.addUpdateListener { ValueAnimator ->
                 var animation = ValueAnimator.animatedValue as Float
                 btn.translationY = animation
@@ -199,7 +200,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun CambiarActivity() {
-        Handler(Looper.myLooper()!!).postDelayed(2000) {
+        Handler(Looper.myLooper()!!).postDelayed(3500) {
             startActivity(Intent(this@MainActivity, Welcome::class.java))
             finish()
         }

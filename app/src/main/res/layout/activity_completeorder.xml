@@ -17,6 +17,7 @@
         app:srcCompat="@drawable/back" />
 
     <ImageView
+        android:id="@+id/desayuno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -24,137 +25,151 @@
         android:src="@drawable/desayuno3" />
 
     <FrameLayout
+        android:id="@+id/contenedor"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/formacontenedo">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:text="Quinoa Fruit Salad"
-            android:textSize="32sp" />
-
         <FrameLayout
+            android:id="@+id/letras"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:translationY="90dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:src="@drawable/menos" />
+            android:layout_height="match_parent">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:text="1"
-                android:textSize="24sp"
-                android:translationX="50dp" />
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Quinoa Fruit Salad"
+                android:textSize="32sp" />
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_gravity="start"
-                android:src="@drawable/mas"
-                android:translationX="80dp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
+            <FrameLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center|end"
-                android:src="@drawable/preccionegro"
-                android:translationX="-70dp" />
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:translationY="90dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:src="@drawable/menos" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="1"
+                    android:textSize="24sp"
+                    android:translationX="50dp" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="start"
+                    android:src="@drawable/mas"
+                    android:translationX="80dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:src="@drawable/preccionegro"
+                    android:translationX="-70dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="2,000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F3F3F3"
+                android:orientation="horizontal"
+                android:translationY="130dp" />
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:text="2,000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:text="One Pack Contains:"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:translationY="-55dp" />
 
+            <View
+                android:layout_width="227dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:background="@color/orange"
+                android:orientation="horizontal"
+                android:translationY="-36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:text="Red Quinoa, Lime, Honey, Blueberries, Strawberries, Mango, Fresh mint."
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:translationY="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:background="#F3F3F3"
+                android:orientation="horizontal"
+                android:translationY="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:text="If you are looking for a new fruit salad to eat today, quinoa is the perfect brunch for you. make"
+                android:textSize="16sp"
+                android:translationY="90dp" />
         </FrameLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#F3F3F3"
-            android:orientation="horizontal"
-            android:translationY="130dp"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="20dp"
-            android:text="One Pack Contains:"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:translationY="-55dp"/>
-
-        <View
-            android:layout_marginStart="20dp"
-            android:layout_width="227dp"
-            android:layout_height="3dp"
-            android:background="@color/orange"
-            android:orientation="horizontal"
-            android:layout_gravity="center_vertical"
-            android:translationY="-36dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Red Quinoa, Lime, Honey, Blueberries, Strawberries, Mango, Fresh mint."
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:layout_marginStart="20dp"
-            android:layout_gravity="center_vertical"
-            android:translationY="10dp"/>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#F3F3F3"
-            android:orientation="horizontal"
-            android:layout_gravity="center_vertical"
-            android:translationY="50dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="If you are looking for a new fruit salad to eat today, quinoa is the perfect brunch for you. make"
-            android:textSize="16sp"
-            android:layout_gravity="center_vertical"
-            android:translationY="90dp"
-            android:layout_marginStart="20dp"/>
-        
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="bottom"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
             <ImageView
+                android:id="@+id/like"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/like"/>
+                android:src="@drawable/like" />
+
             <Button
+                android:id="@+id/btn"
                 android:layout_width="219dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="end"
                 android:background="@drawable/btns"
-                android:text="Add basket"
-                android:layout_gravity="end"/>
-            
+                android:text="Add basket" />
+
         </FrameLayout>
+
 
     </FrameLayout>
 

@@ -4,13 +4,9 @@ import android.animation.ValueAnimator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.LinearInterpolator
 import android.view.animation.OvershootInterpolator
-import androidx.core.os.postDelayed
 import com.example.frutihub.databinding.ActivityHomeScreenOneBinding
 
 class Home_screen_one : AppCompatActivity() {
@@ -21,7 +17,7 @@ class Home_screen_one : AppCompatActivity() {
         setContentView(bindig.root)
         invisible()
         animacione()
-        a()
+        cambiarActividad()
 
     }
 
@@ -42,6 +38,7 @@ class Home_screen_one : AppCompatActivity() {
 
     fun animacione() {
         bindig.apply {
+
 
             //menú
             var aparecemenu = ValueAnimator.ofFloat(0f, 1f)
@@ -64,6 +61,8 @@ class Home_screen_one : AppCompatActivity() {
                 var animation = ValueAnimator.animatedValue as Float
                 texto.alpha = animation
             }
+
+
             var iniiotex = texto.y
             var fintex = texto.y + 250
             texto.y = fintex
@@ -183,7 +182,7 @@ class Home_screen_one : AppCompatActivity() {
 
     }
 
-    fun a() {
+    fun cambiarActividad() {
         bindig.quinoa.setOnClickListener {
             startActivity(Intent(this@Home_screen_one, Completeorder::class.java))
         }
