@@ -18,6 +18,9 @@ class Home_screen_one : AppCompatActivity() {
         invisible()
         animacione()
         cambiarActividad()
+        bindig.canasta.setOnClickListener {
+            startActivity(Intent(this@Home_screen_one, Basket::class.java))
+        }
 
     }
 
