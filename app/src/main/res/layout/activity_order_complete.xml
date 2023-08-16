@@ -8,26 +8,37 @@
     tools:context=".OrderComplete">
 
     <ImageView
+        android:id="@+id/cheked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:src="@drawable/congratulations" />
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/textos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Congratulations!!!"
-        android:textSize="27sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="290dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
         android:gravity="center"
-        android:text="Your order have been taken and is being attended to"
-        android:textSize="20sp" />
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/congratulations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Congratulations!!!"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="Your order have been taken and is being attended to"
+            android:textSize="20sp" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_track"

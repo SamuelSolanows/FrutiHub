@@ -5,50 +5,67 @@
     android:background="@drawable/formabootomsheep"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Delivery address"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <EditText
+    <LinearLayout
+        android:id="@+id/txtDelivery"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/txt_formas"
-        android:hint="10th avenue, Lekki, Lagos State"
-        android:padding="10dp" />
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Number we can call"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Delivery address"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-    <EditText
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/txt_formas"
+            android:hint="10th avenue, Lekki, Lagos State"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/txtNumbers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/txt_formas"
-        android:hint="09090605708"
-        android:inputType="number"
-        android:maxLength="10"
-        android:padding="10dp" />
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Number we can call"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/txt_formas"
+            android:hint="09090605708"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="10dp" />
+    </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
         android:orientation="horizontal">
 
         <Button

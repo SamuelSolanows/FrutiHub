@@ -41,6 +41,7 @@
         android:orientation="vertical">
 
         <FrameLayout
+            android:id="@+id/quinoa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -100,6 +101,7 @@
         </FrameLayout>
 
         <View
+            android:id="@+id/linea1"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="10dp"
@@ -110,6 +112,7 @@
 
 
         <FrameLayout
+            android:id="@+id/melon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -171,6 +174,7 @@
 
 
         <View
+            android:id="@+id/linea2"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="10dp"
@@ -180,6 +184,7 @@
             android:translationY="230dp" />
 
         <FrameLayout
+            android:id="@+id/tropical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -240,12 +245,13 @@
         </FrameLayout>
 
         <FrameLayout
+            android:id="@+id/bootom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginStart="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="100dp">
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp">
 
             <Button
                 android:id="@+id/btn"
