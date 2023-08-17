@@ -30,7 +30,7 @@
             android:text="Delivery Status"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:translationX="60dp" />
+            android:translationX="30dp" />
     </LinearLayout>
 
     <FrameLayout
@@ -41,6 +41,7 @@
         android:orientation="vertical">
 
         <FrameLayout
+            android:id="@+id/orden"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -64,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="Order Taken"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:translationX="90dp" />
 
@@ -79,6 +80,7 @@
         </FrameLayout>
 
         <ImageView
+            android:id="@+id/linea1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/linea"
@@ -87,6 +89,7 @@
 
 
         <FrameLayout
+            android:id="@+id/prepared"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -110,8 +113,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Melon fruit salad"
-                android:textSize="20sp"
+                android:text="Order Is Being Prepared"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:translationX="90dp" />
 
@@ -125,6 +128,7 @@
         </FrameLayout>
 
         <ImageView
+            android:id="@+id/linea2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/linea"
@@ -133,6 +137,7 @@
 
 
         <FrameLayout
+            android:id="@+id/delivery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -155,8 +160,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tropical fruit salad"
-                android:textSize="20sp"
+                android:text="Order Is Being Delivered"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:translationX="90dp" />
 
@@ -179,6 +184,7 @@
         </FrameLayout>
 
         <ImageView
+            android:id="@+id/linea3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/linea"
@@ -186,6 +192,7 @@
             android:translationY="350dp" />
 
         <ImageView
+            android:id="@+id/mapa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -193,6 +200,7 @@
             android:translationY="375dp" />
 
         <ImageView
+            android:id="@+id/linea4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/linea"
@@ -200,6 +208,7 @@
             android:translationY="503dp" />
 
         <FrameLayout
+            android:id="@+id/received"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -223,7 +232,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="Order Received"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:translationX="90dp" />
 
